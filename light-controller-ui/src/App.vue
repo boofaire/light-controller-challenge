@@ -24,7 +24,6 @@
     await axios.get(`http://localhost:8080/intersections/${selectedIntersectionId.value}`)
           .then((response) => {
             currentIntersection.value = response.data;
-            console.log(response.data)
             if(!response.data.cycling) {
               stopMonitoring();
             }

@@ -86,31 +86,31 @@ public class IntersectionController {
         secondaryRoad.addLight(lightThree);
         secondaryRoad.addLight(lightFour);
 
-        Transition transition1 = this.transitionService.createTransition(0, 1000L);
-        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.RED));
-        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.RED));
-        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.GREEN));
-        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.GREEN));
+        Transition transition1 = this.transitionService.createTransition(0, 2000L);
+        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.GREEN));
+        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.GREEN));
+        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.RED));
+        transition1.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.RED));
 
-        Transition transition2 = this.transitionService.createTransition(1, 3000L);
-        transition2.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.YELLOW));
-        transition2.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.YELLOW));
+        Transition transition2 = this.transitionService.createTransition(1, 4000L);
+        transition2.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.YELLOW));
+        transition2.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.YELLOW));
 
-        Transition transition3 = this.transitionService.createTransition(2, 2000L);
-        transition3.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.RED));
-        transition3.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.RED));
+        Transition transition3 = this.transitionService.createTransition(2, 3000L);
+        transition3.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.RED));
+        transition3.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.RED));
 
-        Transition transition4 = this.transitionService.createTransition(3, 1000L);
-        transition4.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.GREEN));
-        transition4.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.GREEN));
+        Transition transition4 = this.transitionService.createTransition(3, 2000L);
+        transition4.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.GREEN));
+        transition4.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.GREEN));
 
         Transition transition5 = this.transitionService.createTransition(4, 3000L);
-        transition5.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.YELLOW));
-        transition5.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.YELLOW));
+        transition5.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.YELLOW));
+        transition5.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.YELLOW));
 
         Transition transition6 = this.transitionService.createTransition(5, 2000L);
-        transition6.addTransitionAction(this.transitionActionService.createTransitionAction(lightOne, LightColor.RED));
-        transition6.addTransitionAction(this.transitionActionService.createTransitionAction(lightTwo, LightColor.RED));
+        transition6.addTransitionAction(this.transitionActionService.createTransitionAction(lightThree, LightColor.RED));
+        transition6.addTransitionAction(this.transitionActionService.createTransitionAction(lightFour, LightColor.RED));
 
         intersection.addRoad(primaryRoad);
         intersection.addRoad(secondaryRoad);
